@@ -21,7 +21,7 @@
         <!-- 登录的div -->
         <div class="login-box">
             <!-- 登录表单 -->
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <!-- 为表单添加验证规则  lay-verify = ''属性 -->
@@ -43,7 +43,7 @@
         <!-- 注册的div -->
         <div class="reg-box">
             <!-- 注册表单 -->
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_reg">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
@@ -70,6 +70,7 @@
 <script src="/assets/lib/layui/layui.all.js"></script>
 <!-- 导入jquery -->
 <script src="/assets/lib/jquery.js"></script>
+<script src="./assets/js/baseAPI.js"></script>
 <!-- 导入自己写的login.js -->
 <script src="./assets/js/login.js"></script>
 
