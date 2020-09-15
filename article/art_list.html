@@ -57,6 +57,7 @@
             </table>
 
             <!-- 分页区域 -->
+            <div id="pageBox"></div>
         </div>
     </div>
 
@@ -70,7 +71,7 @@
             <td>{{$value.state}}</td>
             <td>
                 <button type="button" class="layui-btn  layui-btn-xs btn-edit">编辑</button>
-                <button type="button" class="layui-btn  layui-btn-danger layui-btn-xs" id="btn-del">删除</button>
+                <button type="button" data-id={{$value.Id}} class="layui-btn  layui-btn-danger layui-btn-xs btn-del">删除</button>
             </td>
         </tr>
         {{/each}}
@@ -81,11 +82,10 @@
     <script type="text/html" id="tpl-cate">
         <option value="">所有分类</option>
         {{each data}}
-
         <option value="{{$value.Id}}">{{$value.name}}</option>
-
         {{/each}}
     </script>
+
     <script src="/assets/lib/layui/layui.all.js"></script>
     <script src="/assets/lib/jquery.js"></script>
     <script src="/assets/js/baseAPI.js"></script>
